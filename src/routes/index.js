@@ -7,7 +7,7 @@ import {
   // Outlet,
 } from "react-router-dom";
 // import Swal from "sweetalert2";
-import Login from "../pages/Auth/login";
+import LoginPage from "../pages/Auth/login";
 
 function Router() {
   //   const PrivateRoute = () => {
@@ -22,7 +22,7 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
