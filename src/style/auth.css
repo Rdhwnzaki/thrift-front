@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+.Application,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba (34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex; /* added 'display: flex;' for proper flexbox behavior */
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px; /* corrected 'pixels' to 'px' */
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); /* corrected 'rgb' to 'rgba' */
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px; /* corrected 'border radius' to 'border-radius' */
+  transition: all 0.3s; /* corrected '. 3 seconds' to '0.3s' */
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #2b2b2c; /* corrected 'border color' to 'border-color' */
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0; /* corrected 'limit' to 'margin' */
+  line-height: 1; /* corrected 'line height' to 'line-height' */
+  padding-bottom: 20px; /* corrected 'bottom-padding' to 'padding-bottom' */
+}
+
+.custom-control-label {
+  font-weight: 400; /* corrected 'font weight' to 'font-weight' */
+}
+
+.forgot-password, /* corrected 'forgot password' to 'forgot-password' */
+.forgot-password a {
+  text-align: right;
+  font-size: 13px; /* corrected 'font size' to 'font-size' */
+  padding-top: 10px; /* corrected 'top-padding' to 'padding-top' */
+  color: #7f7d7d;
+  margin: 0; /* corrected 'limit' to 'margin' */
+}
+
+.forgot-password a {
+  color: #167bff;
+}
