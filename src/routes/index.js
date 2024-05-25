@@ -8,6 +8,10 @@ import {
 } from "react-router-dom";
 // import Swal from "sweetalert2";
 import LoginPage from "../pages/Auth/login";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import Register from "../pages/Auth/register";
+import Home from "../pages/home";
 
 function Router() {
   //   const PrivateRoute = () => {
@@ -23,6 +27,8 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path='/login' element={<LoginPage />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
