@@ -7,7 +7,11 @@ import {
   // Outlet,
 } from "react-router-dom";
 // import Swal from "sweetalert2";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 import Login from "../pages/Auth/login";
+import Register from "../pages/Auth/register";
+import Home from "../pages/home";
 
 function Router() {
   //   const PrivateRoute = () => {
@@ -22,7 +26,9 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
