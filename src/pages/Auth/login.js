@@ -1,22 +1,65 @@
-import React, { Fragment } from "react";
-
-function Login() {
-  return (
-    <Fragment>
-      <div className='bg-login' style={{ height: "1900px" }}>
-        <div className='container'>
-          <div
-            className='card'
-            style={{
-              height: "700px",
-              width: "500px",
-              marginLeft: "400px",
-              paddingTop: "00px",
-            }}></div>
+import React, { Component } from "react";
+import "../../style/auth.css"; // Import the CSS file
+export default class Login extends Component {
+  render() {
+    return (
+      <form>
+        {" "}
+        <div className="navbar-light" style={{ height: "643px" }}>
+          <div className="auth-wrapper">
+            <div className="auth-inner">
+              <h3>Login</h3>{" "}
+              <div className="mb-3">
+                {" "}
+                <label>Email address</label>{" "}
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Enter email"
+                />{" "}
+              </div>{" "}
+              <div className="mb-3">
+                {" "}
+                <label>Password</label>{" "}
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="Enter password"
+                />{" "}
+              </div>{" "}
+              <div className="mb-3">
+                {" "}
+                <div className="custom-control custom-checkbox">
+                  {" "}
+                  <input
+                    type="checkbox"
+                    className="custom- control-input"
+                    id="customCheck1"
+                  />{" "}
+                  <label
+                    className="custom-control-label"
+                    htmlFor="customCheck1"
+                  >
+                    {" "}
+                    Remember me{" "}
+                  </label>{" "}
+                </div>{" "}
+              </div>{" "}
+              <div className="d-grid ">
+                {" "}
+                <button type="submit" className="btn btn-success">
+                  {" "}
+                  Submit{" "}
+                </button>{" "}
+              </div>{" "}
+              <p className="forgot-password text-right">
+                {" "}
+                Forgot <a href="#"> password?</a>{" "}
+              </p>{" "}
+            </div>
+          </div>
         </div>
-      </div>
-    </Fragment>
-  );
+      </form>
+    );
+  }
 }
-
-export default Login;
