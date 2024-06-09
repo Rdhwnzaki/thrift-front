@@ -29,35 +29,6 @@ span {
   box-shadow: 0px 14px 80px rgba (34, 35, 58, 0.2);
 }
 
-.auth-wrapper {
-  display: flex; /* added 'display: flex;' for proper flexbox behavior */
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-}
-
-.auth-inner {
-  width: 450px; /* corrected 'pixels' to 'px' */
-  margin: auto;
-  background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); /* corrected 'rgb' to 'rgba' */
-  padding: 40px 55px 45px 55px;
-  border-radius: 15px; /* corrected 'border radius' to 'border-radius' */
-  transition: all 0.3s; /* corrected '. 3 seconds' to '0.3s' */
-}
-
-.auth-wrapper .form-control:focus {
-  border-color: #2b2b2c; /* corrected 'border color' to 'border-color' */
-  box-shadow: none;
-}
-
-.auth-wrapper h3 {
-  text-align: center;
-  margin: 0; /* corrected 'limit' to 'margin' */
-  line-height: 1; /* corrected 'line height' to 'line-height' */
-  padding-bottom: 20px; /* corrected 'bottom-padding' to 'padding-bottom' */
-}
-
 .custom-control-label {
   font-weight: 400; /* corrected 'font weight' to 'font-weight' */
 }
