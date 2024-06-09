@@ -17,36 +17,72 @@ function Home() {
   return (
     <Fragment>
       <Navbar />
-      <Container style={{ marginTop: "130px" }}>
-        <Carousel data-bs-theme='dark' className='mt-2'>
-          <Carousel.Item>
-            <img
-              className='d-block w-100'
-              src={c1}
-              alt='First slide'
-              style={{ height: "300px", borderRadius: "10px" }}
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className='d-block w-100'
-              src={c2}
-              alt='Second slide'
-              style={{ height: "300px", borderRadius: "10px" }}
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className='d-block w-100'
-              src={c3}
-              alt='Third slide'
-              style={{ height: "300px", borderRadius: "10px" }}
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+      <Container style={{ marginTop: "80px" }}>
+        <div className="row">
+          <div className="col-lg-3 border-end">
+            <div className="d-flex flex-column">
+              <div className="p-1">
+                <h6 className="fw-normal">Women's Fashion</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Men's Fashion</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Electronics</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Home & Lifestyle</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Medicine</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Sport & Outdor</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Baby's & Toys</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Groceries & Pets</h6>
+              </div>
+              <div className="p-1">
+                <h6 className="fw-normal">Health & Beauty</h6>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-9">
+            <Carousel data-bs-theme='dark' className='mt-2'>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  src={c1}
+                  alt='First slide'
+                  style={{ height: "300px" }}
+                />
+                <Carousel.Caption></Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  src={c2}
+                  alt='Second slide'
+                  style={{ height: "300px" }}
+                />
+                <Carousel.Caption></Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className='d-block w-100'
+                  src={c3}
+                  alt='Third slide'
+                  style={{ height: "300px" }}
+                />
+                <Carousel.Caption></Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+
+          </div>
+        </div>
         <Row className='mt-4'>
           {data.map((dat, datIdx) => {
             return (
