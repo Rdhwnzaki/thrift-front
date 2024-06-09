@@ -4,16 +4,11 @@ import Carousel from "react-bootstrap/Carousel";
 import c1 from "../assets/images/c1.jpg";
 import c2 from "../assets/images/c2.jpg";
 import c3 from "../assets/images/c3.jpg";
-import p1 from "../assets/images/p1.png";
-import p2 from "../assets/images/p2.jpg";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import Tags from "../components/Tags";
+import List from "../components/List";
 
 function Home() {
-  const data = [1, 2, 3, 4, 5, 6, 7, 8];
-  const data2 = [
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1,
-  ];
   return (
     <Fragment>
       <Navbar />
@@ -83,59 +78,13 @@ function Home() {
 
           </div>
         </div>
-        <Row className='mt-4'>
-          {data.map((dat, datIdx) => {
-            return (
-              <Col lg={3} className='mb-3' key={datIdx}>
-                <Card>
-                  <div className='d-flex flex-row'>
-                    <div className='p-2'>
-                      <Card.Img
-                        variant='top'
-                        src={p1}
-                        style={{ height: "90px" }}
-                      />
-                    </div>
-                    <div className='p-2 mt-3'>
-                      <h6>Name</h6>
-                      <h6>Desc</h6>
-                    </div>
-                  </div>
-                </Card>
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
-      <div
-        style={{
-          width: "100%",
-          height: "10px",
-          backgroundColor: "#f0f3f7",
-        }}></div>
-      <Container>
-        <Row className='mt-4'>
-          {data2.map((dat, datIdx) => {
-            return (
-              <Col lg={2} className='mb-3' key={datIdx}>
-                <Card>
-                  <div className='p-2'>
-                    <Card.Img
-                      variant='top'
-                      src={p2}
-                      style={{ height: "170px" }}
-                    />
-                  </div>
-                  <div className='p-2 mt-3'>
-                    <h6>Name</h6>
-                    <h6>Desc</h6>
-                    <h6>Harga</h6>
-                  </div>
-                </Card>
-              </Col>
-            );
-          })}
-        </Row>
+        <Tags title={"Today's"} name={"Flash Sales"} />
+        <List />
+        <div className="d-flex justify-content-center">
+          <button className="btn btn-danger mt-3">View All Products</button>
+        </div>
+        <hr className="mt-5" />
+        <Tags title={"Categories"} name={"Browse By Category"} />
       </Container>
     </Fragment>
   );
